@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Love';
+    src: url('fontes/Wondrous\ Free.otf') format('opentype');
+    src: url('fontes/Wondrous\ Free.ttf') format('truetype');
+    font-weight: normal;
+}
+
+:root {
+    --cor1: rgb(253, 170, 219); 
+    --cor2: #f52b35;
+    --cor3: #d61887;
+    --cor4: #6e0b0b;
+
+    --font-love: 'Love', Cursive;
+}
+
+body {
+    background-color: var(--cor1);
+    font-family: var(--font-love);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+    text-align: center;
+    padding: 5px;
+}
+
+header > h1 {
+    color: azure;
+    font-family: var(--font-love);
+    font-size: 5em;
+    margin-bottom: 0px;
+}
+
+header > p {
+    color: azure;
+    font-family: var(--font-love);
+    font-size: 1.2em;
+    padding-bottom: 35px;
+}
+
+nav {
+    background-color: var(--cor4);
+    padding-bottom: 2px;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.527);
+}
+
+nav > a {
+    color: white;
+    font-family: var(--font-love);
+    font-size: 1.8em;
+    text-decoration: none;
+    padding: 5px 7px 5px 7px;
+}
+
+nav > a:hover {
+    background-color: #f52b35;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h2.inicio {
+    background-image: linear-gradient(to right, #64c3fa, transparent);
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+    text-indent: 17px;
+}
+
+main h2 {
+    background-image: linear-gradient(to right, var(--cor3), transparent);
+    color: aliceblue;
+    margin-top: 40px;
+    text-indent: 17px;
+}
+
+main h2.teamo {
+    background-image: linear-gradient(to right, #f52b35, transparent);
+    color: aliceblue;
+    text-indent: 17px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+main p {
+    margin: 10px;
+}
+
+main img {
+    margin: auto;
+    display: block;
+    margin-top: 13px;
+}
+
+footer {
+    background-color: #f52b35;
+    padding: 5px;
+}
+
+footer > p {
+    font-size: 1.3em;
+    text-align: center;
+    color: white;
+    padding-left: 5px;
+}
+
+iframe {
+    margin: auto;
+    display: block;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
